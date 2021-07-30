@@ -1,0 +1,288 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+/*
+* Background Color : #9bffb2
+* Text Color : #17af30
+*/
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+
+/* ################( Home Section )############## */
+
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/bg2.png);
+    background-size: cover;
+    background-position: center;
+    /* background-color: #9bffb2; */
+    /* background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%); */
+    position: relative;
+}
+
+nav{
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+}
+
+.logo a{
+    /* color: #17af30; */
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 3px black;
+}
+
+.logo{
+    animation: logo_animation ;
+}
+
+.menu ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0px 5px;
+}
+
+.menu ul li a{
+    text-transform: capitalize;
+    color: #17af30;
+    font-weight: bold;
+    padding: 6px 0px;
+    animation: all 1s;
+}
+
+.menu ul li a:hover{
+    border-bottom: 3px solid rgb(19, 185, 158);
+}
+
+.active{
+    border-bottom: 3px solid rgb(19, 185, 158);
+}
+
+.btn_contact a{
+    color: #28a745;
+    padding: 14px 24px;
+    font-weight: bold;
+    background-color: #ffffff9c;
+    border-radius: 50px;
+    transition: 300ms;
+}
+
+.btn_contact a:hover{
+    background-color: #a2c9abc9;
+}
+
+
+
+
+.content{
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(-10%,-50%);
+}
+
+.content small{
+    font-weight: bold;
+}
+
+.content h1{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 4em;
+    text-shadow: 4px 4px 6px black;
+    color: #17af30;
+}
+
+.content p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    color: red;
+}
+
+/* ##################( Team Section )#################### */
+.team{
+    /* background-color: #b1fea7; */
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0px 100px;
+}
+
+section h1{
+    padding: 50px 0;
+    text-align: center;
+    /* text-transform: uppercase; */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3em;
+}
+
+.card{
+    width: 200px;
+    height: 250px;
+    border: 1px solid rgb(212, 209, 209);
+    border-radius: 10px;
+    box-shadow: 1px 1px 4px black;
+    margin: 0 20px 50px 20px;
+}
+
+.card img{
+    width: 100%;
+    height: 80%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card_body{
+    padding: 2px 5px;
+    text-align: center;
+    background-color: white;
+}
+
+.card_title{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 2px;
+}
+
+.card_info{
+    color: rgb(167, 162, 162);
+    font-size: 0.8rem;
+}
+
+/* ###############( Contact Form )################## */
+#contact_section{
+    background-color: rgb(238, 230, 230);
+    padding-bottom: 50px;
+}
+
+form{
+    width: 80%;
+    /* background-color: #bbffcb; */
+    background-color: white;
+    margin: auto;
+    padding: 40px 50px;
+}
+
+form label{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+form input{
+    font-size: 16px;
+    width: 100%;
+    height: 35px;
+    margin-top: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid rgb(204, 198, 198);
+}
+
+form input:focus, form textarea:focus{
+    border: 1px solid rgba(81, 203, 238, 1);
+    box-shadow: 0 0 6px rgba(81, 203, 238, 1);
+}
+
+form textarea{
+    font-size: 16px;
+    outline: none;
+    border-radius: 5px;
+    margin-top: 5px;
+    border: 1px solid rgb(204, 198, 198);
+}
+
+.form_group{
+    margin-bottom: 10px;
+}
+
+form button{
+    background-color: #0f8b23;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* ################( Services Section )################# */
+.services{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0px 150px;
+}
+
+
+.service_card{
+    width: 350px;
+    border: 1px solid rgb(212, 209, 209);
+    border-radius: 10px;
+    box-shadow: 3px 3px 6px black;
+    margin: 0 20px 50px 20px;
+    cursor: pointer;
+}
+
+
+.service_card img{
+    width: 350px;
+    height: 200px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.service_card_body{
+    text-align: center;
+}
+
+.service_card h3{
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 10px 0;
+}
+
+.service_card p{
+    padding: 0 10px 20px;
+}
+
+
+/* ##############( Footer )############ */
+footer{
+    padding: 30px;
+    background-color: #17af30;
+    text-align: center;
+}
+
+.chatIcon{
+    background-color: #17af30;
+    border-radius: 50px;
+    font-weight: bold;
+    padding: 10px;
+    z-index: 1;
+    position: fixed;
+    bottom: 10px;
+    right: 5px;
+    box-shadow: 0 2px 6px black;
+    cursor: pointer;
+    transition: 300ms;
+}
+
+.chatIcon:hover{
+    background-color: #0f8b23;
+}
